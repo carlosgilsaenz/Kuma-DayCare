@@ -94,17 +94,5 @@
                 android:text="50th Ave \nSan Francisco CA"
                 style="@style/text_small"/>
         </LinearLayout>
-
+    </LinearLayout>
 </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/text_size_medium"
-        android:text="Neighborhood sitters "
-        android:paddingLeft="16dp"
-        android:paddingTop="14dp"
-        android:paddingBottom="14dp"
-        android:background="@color/colorPrimary"
-        style="@style/textbase"/>
-
