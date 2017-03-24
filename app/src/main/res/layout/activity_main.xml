@@ -1,98 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
+    tools:context="com.example.android.kuma_daycare.MainActivity"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.android.kuma_daycare.MainActivity">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:src="@drawable/id_kuma2"
-        android:scaleType="centerCrop"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/text_size_large"
-        android:text="Kuma's DayCare"
-        android:textStyle="bold"
-        android:paddingLeft="16dp"
-        android:paddingTop="24dp"
-        android:paddingBottom="24dp"
-        android:background="@color/colorPrimaryDark"
-        style="@style/textbase"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/text_size_medium"
-        android:text="The Doggy Staycation"
-        android:paddingLeft="16dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:background="@color/colorPrimary"
-        style="@style/textbase"/>
-
+    android:layout_width="wrap_content"
+    >
     <LinearLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:background="@color/base_text">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/id_kuma2"
+            android:scaleType="centerCrop"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size_small"
-            android:paddingTop="10dp"
-            android:text="Contact Infomation"
-            style="@style/text_small_header"/>
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/image"
-                android:src="@drawable/ic_call_black_24dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="415-876-4321"
-                style="@style/text_small"/>
-        </LinearLayout>
+            android:textSize="@dimen/text_size_large"
+            android:text="@string/business_name"
+            android:textStyle="bold"
+            android:paddingLeft="16dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:background="@color/colorPrimaryDark"
+            style="@style/textbase"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:text="@string/business_moto"
+            android:paddingLeft="16dp"
             android:paddingTop="10dp"
-            android:text="Doggy Location"
-            style="@style/text_small_header" />
+            android:paddingBottom="10dp"
+            android:background="@color/colorPrimary"
+            style="@style/textbase"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/base_text">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_room_black_24dp"
-                style="@style/image"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="50th Ave \nSan Francisco CA"
-                style="@style/text_small"/>
+                android:textSize="@dimen/text_size_small"
+                android:paddingTop="10dp"
+                android:text="Contact Infomation"
+                style="@style/text_small_header"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/image"
+                    android:src="@drawable/ic_call_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/business_contact"
+                    style="@style/text_small"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Doggy Location"
+                style="@style/text_small_header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_room_black_24dp"
+                    style="@style/image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/business_location"
+                    style="@style/text_small"
+                    android:id="@+id/textView" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</ScrollView>

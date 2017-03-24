@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Kuma-DayCare</string>
 
-
+    <string name="business_name">Kuma's DayCare</string>
+    <string name="business_moto">The Doggy Staycation</string>
+    <string name="business_contact">415-876-4321</string>
+    <string name="business_location">50th Ave \nSan Francisco CA"</string>
 </resources>
